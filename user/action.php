@@ -57,13 +57,13 @@
 						header("Location:index.php");
 					}else if($type == 2){
 						echo "广告主（企业）";
-						$sql1 = "insert into jnyo_advertiser_enterprise values('{$id}','未设置','未设置','未设置','未设置','未设置','未设置','未设置','未设置','未设置','未设置')";
+						$sql1 = "insert into jnyo_advertiser_enterprise values('{$id}','未设置','未设置','未设置','未设置','未设置','未设置','未设置','未设置','未设置','未设置','0')";
 						echo "$sql1";
 						mysql_query($sql1,$link);
 						header("Location:index.php");
 					}else{
 						echo "站长";
-						$sql1 = "insert into jnyo_station values('{$id}','未设置','未设置','未设置','未设置','未设置')";
+						$sql1 = "insert into jnyo_station values('{$id}','未设置','未设置','未设置','未设置','未设置','0')";
 						mysql_query($sql1,$link);
 						header("Location:index.php");
 					}
