@@ -191,7 +191,7 @@
 							echo "<td>{$row['aid']}</td>";
 
 							echo "<td>{$row['bid']}</td>";
-							echo "<td>{$row['bname']}</td>";
+							echo "<td>{$row['adname']}</td>";
 							echo "<td>{$row['pid']}</td>";
 							//echo "<td>{$row['category']}</td>";
 							if ($row['category'] == 1){
@@ -201,7 +201,7 @@
 							}							
 							echo "<td>{$row['url']}</td>";
 							if (!empty($row['image'])){
-							echo "<td><a href=\"../Uploads/{$row['image']}\"  target=\"_Blank\">查看广告图片</a></td>";
+							echo "<td><a href=\"../../Uploads/{$row['image']}\"  target=\"_Blank\">查看广告图片</a></td>";
 							}else{
 								echo"<td>暂无广告图片！</td>";
 							}
@@ -216,8 +216,10 @@
 							//echo "<td>{$row['status']}</td>";
 							if ($row['status'] == 1){
 								echo "<td>已启用</td>";
-							}else{
-								echo "<td>未启用</td>";
+							}else if ($row['status'] == 0){
+								echo "<td>暂停</td>";
+							}else if ($row['status'] == 2){
+								echo "<td>关闭</td>";								
 							}
 							echo "<td>".date("Y-m-d",$row['timestamp'])."</td>";
 							echo "<td>

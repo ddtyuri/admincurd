@@ -179,7 +179,13 @@
                             	<div class="mws-form-row">
                                 	<label>营业执照</label>
                                 	<div class="mws-form-item">
-                                    	<input type="text" name="licenseimg" class="mws-textinput" value="<?php echo $jnyo_user['licenseimg']; ?>" readonly="true"/>
+                                    	<input type="text" name="licenseimg" class="mws-textinput" value="<?php echo $jnyo_user['licenseimg']; ?>" readonly="true" style="display:none"/>
+										<?php 
+										if (!empty($jnyo_user['licenseimg'])){
+										echo "<a href=\"../../Uploads/{$jnyo_user['licenseimg']}\"  target=\"_Blank\">查看营业执照图片</a>";
+										}else{
+											echo"<td>暂无营业执照图片！</td>";
+										}?>
                                     </div>
                                 </div>
 								
@@ -206,7 +212,13 @@
 								<div class="mws-form-row">
                                 	<label>身份证照片</label>
                                 	<div class="mws-form-item">
-                                    	<input type="text" name="idimg" class="mws-textinput" value="<?php echo $jnyo_user['idimg']; ?>" readonly="true"/>
+                                    	<input type="text" name="idimg" class="mws-textinput" value="<?php echo $jnyo_user['idimg']; ?>" readonly="true" style="display:none"/>
+										<?php 
+										if (!empty($jnyo_user['idimg'])){
+										echo "<a href=\"../../Uploads/{$jnyo_user['idimg']}\"  target=\"_Blank\">查看身份证图片</a>";
+										}else{
+											echo"<td>暂无身份证图片！</td>";
+										}?>										
                                     </div>
                                 </div>
 								

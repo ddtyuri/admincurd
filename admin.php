@@ -7,7 +7,7 @@ $password = $_POST['password'];
 //echo $nickname;
 define("HOST","localhost");	//主机名
 define("USER","root");		//账号
-define("PASS","");		//密码
+define("PASS","8vdyBMU8");		//密码
 define("DBNAME","jnyo");	//数据库名
 $link = @mysql_connect(HOST,USER,PASS) or die("数据库连接失败！");
 mysql_select_db(DBNAME,$link);

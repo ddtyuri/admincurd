@@ -164,7 +164,7 @@
                     			<div class="mws-form-row">
                     				<label>商家名称:</label>
                     				<div class="mws-form-item medium">
-                    					<input type="text" class="mws-textinput required" name="bname" value="<?php echo $jnyo_ad['bname']; ?>" >
+                    					<input type="text" class="mws-textinput required" name="bname" value="<?php echo $jnyo_ad['adname']; ?>" >
                     				</div>
                     			</div>
                     			<div class="mws-form-row">
@@ -252,8 +252,8 @@
                     				<div class="mws-form-item small">
                     					<select name="status">
                     						<option value="1">开启</option>
-                    						<option value="0">关闭</option>
-
+                    						<option value="0">暂停</option>
+                    						<option value="2">关闭</option>
                     					</select>
                     				</div>
                     			</div>		

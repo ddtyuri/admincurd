@@ -167,7 +167,7 @@
                         <table class="mws-datatable-fn mws-table">
                             <thead>
                                 <tr>
-					<th>商品id</th><th>商家id</th><th>商品价格</th>
+					<th>商品id</th><th>商家id</th><th>商品名称</th><th>商品价格</th>
 					<th>卖点</th><th>介绍</th>
 					<th>备注</th><th>产品链接</th><th>发布时间</th><th>操作</th>
 
@@ -187,6 +187,7 @@
 							echo "<td>{$row['pid']}</td>";
 
 							echo "<td>{$row['jid']}</td>";
+							echo "<td>{$row['name']}</td>";							
 							echo "<td>{$row['price']}</td>";
 							echo "<td>{$row['sellpoin']}</td>";
 							//echo "<td>{$row['category']}</td>";

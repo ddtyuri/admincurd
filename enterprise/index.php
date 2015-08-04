@@ -203,10 +203,20 @@
 							echo "<td>{$row['jid']}</td>";
 							echo "<td>{$row['name']}</td>";
 							echo "<td>{$row['license']}</td>";
-							echo "<td>{$row['licenseimg']}</td>";
+							//echo "<td>{$row['licenseimg']}</td>";
+							if (!empty($row['licenseimg'])){
+							echo "<td><a href=\"../../Uploads/{$row['licenseimg']}\"  target=\"_Blank\">查看营业执照图片</a></td>";
+							}else{
+								echo"<td>暂无营业执照图片！</td>";
+							}							
 							echo "<td>{$row['realname']}</td>";
 							echo "<td>{$row['idnum']}</td>";
-							echo "<td>{$row['idimg']}</td>";
+							//echo "<td>{$row['idimg']}</td>";
+							if (!empty($row['idimg'])){
+							echo "<td><a href=\"../../Uploads/{$row['idimg']}\"  target=\"_Blank\">查看身份证图片</a></td>";
+							}else{
+								echo"<td>暂无营业执照图片！</td>";
+							}							
 							echo "<td>{$row['bankname']}</td>";
 							echo "<td>{$row['accountname']}</td>";
 							echo "<td>{$row['bankaccount']}</td>";

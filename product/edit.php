@@ -162,6 +162,12 @@
                     					<input type="text" class="mws-textinput required" name="jid" value="<?php echo $jnyo_product['jid']; ?>">
                     				</div>
                     			</div>
+                    			<div class="mws-form-row">
+                    				<label>商品名称:</label>
+                    				<div class="mws-form-item small">
+                    					<input type="text" class="mws-textinput required" name="name" value="<?php echo $jnyo_product['name']; ?>">
+                    				</div>
+                    			</div>								
                             	<div class="mws-form-row">
                                 	<label>商品价格</label>
                                 	<div class="mws-form-item">

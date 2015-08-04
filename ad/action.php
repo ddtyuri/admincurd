@@ -92,8 +92,8 @@
 				
 				//2. 过滤要修改的信息（省略）
 				//3. 拼装修改sql语句，并执行修改操作
-				$sql = "update jnyo_ad set timestamp='{$timestamp}',category='{$category}',bname='{$bname}',bid='{$bid}',pid='{$pid}',url='{$url}',image='{$image}',settlemode='{$settlemode}',status='{$status}' where aid={$aid}";
-				//echo $sql;
+				$sql = "update jnyo_ad set timestamp='{$timestamp}',category='{$category}',adname='{$bname}',bid='{$bid}',pid='{$pid}',url='{$url}',image='{$image}',settlemode='{$settlemode}',status='{$status}' where aid={$aid}";
+				echo $sql;
 				mysql_query($sql,$link);
 			
 				//4. 跳转回浏览界面

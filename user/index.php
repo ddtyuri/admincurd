@@ -210,8 +210,10 @@
 							/* echo "<td>{$row['status']}</td>"; */
 							if($row['status']==1){
 								echo "<td>正常</td>";
-							}else{
+							}else if($row['status']==0){
 								echo "<td>未激活</td>";
+							}else{
+								echo "<td>冻结</td>";
 							}
 							
 								

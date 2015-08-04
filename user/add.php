@@ -177,6 +177,7 @@
                     					<select name="status">
                     						<option value="1">正常</option>
                     						<option value="0">无效</option>
+                    						<option value="2">冻结</option>											
 
                     					</select>
                     				</div>

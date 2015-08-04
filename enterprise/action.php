@@ -116,7 +116,7 @@
 				
 				//2. 过滤要修改的信息（省略）
 				//3. 拼装修改sql语句，并执行修改操作
-				$sql = "update jnyo_advertiser_enterprise set name='{$name}',license='{$license}',licenseimg='{$licenseimg}',realname='{$realname}',idnum='{$idnum}',idimg='{$idimg}',bankname='{$bankname}',accountname='{$accountname}',bankaccount='{$bankaccount}',tradepwd='{$tradepwd}',status='{$status}' where jid={$jid}";
+				$sql = "update jnyo_advertiser_enterprise set name='{$name}',license='{$license}',licenseimg='{$licenseimg}',realname='{$realname}',idnum='{$idnum}',idimg='{$idimg}',bankname='{$bankname}',accountname='{$accountname}',bankaccount='{$bankaccount}',status='{$status}' where jid={$jid}";
 				//echo $sql;
 				mysql_query($sql,$link);
 			

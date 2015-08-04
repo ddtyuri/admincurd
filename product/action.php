@@ -28,7 +28,7 @@
 					
 					
 				$jid = $_POST["jid"];
-				
+				$name = $_POST["name"];
 
 				$price = $_POST["price"];				
 				$sellpoin = $_POST["sellpoin"];
@@ -43,12 +43,13 @@
 				
 			//2. 做信息过滤（省略）
 			//3. 拼装添加SQL语句，并执行添加操作
-				$sql = "insert into jnyo_product values(null,'{$jid}','{$price}','{$sellpoin}','{$introduce}','{$remark}','{$url}','{$timestamp}')";
-				//echo $sql;
+				$sql = "insert into jnyo_product values(null,'{$jid}','{$name}','{$price}','{$sellpoin}','{$introduce}','{$remark}','{$url}','{$timestamp}')";
+				echo $sql;
 				mysql_query($sql,$link);
 				
 			//4. 判断是否成功
 				$id = mysql_insert_id($link);//获取刚刚添加信息的自增id号值
+				echo $id;
 				if($id>0){
 					echo "<h3>商品信息添加成功！</h3>";
 					header("Location:index.php");
